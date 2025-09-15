@@ -1,0 +1,275 @@
+:root {
+    --primary-color: #464646;
+    --secondary-color: #A3A3A3;
+
+    --color-icon: #464646;
+    --menu-color: #464646;
+
+    --color-icon-hover: #4894FF;
+    --menu-color-hover: #4894FF;
+
+    --bg-chat-icon: #F6F6F6;
+
+    --bg-color: #fff;
+    --box-shadow: rgba(0, 0, 0, .25);
+
+    --border-button: #ECECEC;
+    --bg-button-video: #FFB050;
+    --bg-button-audio: #fff;
+    --color-button-audio: #464646;
+    --color-button: #fff;
+    --bg-button-local: #4894FF;
+
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--primary-color);
+}
+
+.color-icon {
+    fill: var(--color-icon);
+}
+
+.container {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+main .container {
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+main {
+    margin-bottom: 4rem;
+}
+
+/** HEADER **/
+header {
+    margin-bottom: 1rem;
+}
+
+header .container {
+    column-gap: 1rem;
+    align-items: center;
+    flex-direction: row;
+}
+
+header figure {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+}
+
+header figure img {
+    max-width: 100%;
+    border-radius: 100%;
+}
+
+.info-header h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+
+.info-header p {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+}
+
+/**CARD **/
+.data-consulta {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.container-card {
+    background-color: var(--bg-color);
+    display: flex;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    flex-direction: column;
+    box-shadow: 1px 1px 8px var(--box-shadow);
+}
+
+.box-top {
+    border-bottom: 1px solid var(--border-button);
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-top .icon-cliente {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    margin-right: 1.5rem;
+
+}
+
+.box-top .icon-cliente img {
+    max-width: 100%;
+    border-radius: 100%;
+}
+
+.cliente {
+    display: flex;
+    align-items: center;
+}
+
+.tipo-consulta {
+    display: flex;
+    font-size: 0.75rem;
+    column-gap: 0.6rem;
+    color: var(--secondary-color);
+}
+
+.icon-chat {
+    display: flex;
+    background-color: var(--bg-chat-icon);
+    border-radius: 100%;
+    cursor: pointer;
+    padding: .5rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+.icon-chat img {
+    max-width: 100%;
+
+}
+
+.box-bottom {
+    display: flex;
+    padding-top: 1rem;
+    flex-direction: column;
+}
+
+/**BUTONS**/
+.btn {
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--border-button);
+    font-weight: 500;
+    background-color: var(--bg-button-audio);
+    cursor: pointer;
+    font-size: 0.8rem;
+
+
+}
+
+.btn-video {
+    background-color: var(--bg-button-video);
+    color: var(--color-button);
+}
+
+.btn-address {
+    background-color: var(--bg-button-local);
+    color: var(--color-button);
+    width: 100%;
+}
+
+.box-button {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/**NAV**/
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+nav .container {
+    flex-direction: row;
+    text-align: center;
+    align-items: last baseline;
+    justify-content: space-between;
+
+}
+
+nav ul {
+    background-color: var(--bg-color);
+    box-shadow: 1px 1px 8px var(--box-shadow);
+
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: var(--menu-color-hover);
+
+    .color-icon {
+        fill: var(--color-icon-hover);
+    }
+}
+
+
+@media (min-width: 575.98px) {
+    main .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .container-card {
+        min-width: 20.5rem;
+    }
+}
+
+
+@media (min-width: 767.98px) {
+
+    main {
+        margin-bottom: 0;
+        margin-left: 10rem;
+    }
+
+    header {
+        margin-left: 10rem;
+    }
+
+    nav {
+        top: 0;
+        width: 10rem;
+        height: 100%;
+    }
+
+    nav .container {
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 2rem;
+
+    }
+
+    nav ul li {
+        display: flex;
+        column-gap: 0.5rem;
+        margin-bottom: 1rem;
+
+    }
+
+    .icon-menu {
+        width: 2rem;
+    }
+
+}
+
+
+@media (max-width: 991.98px) {}
+
+
+@media (max-width: 1199.98px) {}
+
+
+@media (max-width: 1399.98px) {}
