@@ -7,6 +7,6 @@ O objetivo era criar um site de marcação de consultas responsivo usando o conc
 ### Celular
 <img src="assets/img/preview-celular.png">
 
-## [Site no ar](https://tanizmoura.github.io/popular-movies/)
+## [Site no ar](https://tanizmoura.github.io/clinica-alura/)
 
 
